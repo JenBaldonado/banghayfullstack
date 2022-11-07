@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(../assets/High\ Resolution\ Logo\ -\ Transparent\ Background.png); /*https://stackoverflow.com/questions/4997493/set-opacity-of-background-image-without-affecting-child-elements*/
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 512px;
+}
+/*--------------------------------------MAIN WINDOW----------------------------------------*/
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+.signin,
+.signout {
+  border: 0px;
+  padding: 10px 70px;
+  background-color: #3c84f8;
+  color: white;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: none;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  max-width: 920px;
+  object-fit: cover;
+  gap: 16px;
+}
+
+.card-item {
+  border: 2px solid black;
+  height: 16rem;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  height: 12rem;
+  width: 12rem;
+  margin: 5px;
+  object-fit: cover;
+}
+
+p {
+  padding-top: 15px;
+}
+
+.share-container {
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-top: -30px; */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#sharebtn,
+.upload {
+  padding: 10px 70px;
+  margin: 20px 0 auto;
+  background-color: #3c84f8;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline;
+}
+
+/*----------------------------------------END OF MAIN WINDOW-------------------------------------*/
+
+/*-----------------------------------------UPLOAD WINDOW-----------------------------------------*/
+
+fieldset {
+  border: none;
+  padding: 10px;
+  position: relative;
+}
+
+select {
+  background-color: dodgerblue;
+  border: none;
+  padding: 8px;
+  color: #f1f1f1;
+}
+
+.subject-select:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+  border-bottom: #f1f1f1;
+}
+
+option {
+  color: #ffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+textarea {
+  width: 43vw;
+  height: 20vw;
+  margin: 20px auto;
+  background-color: rgba(224, 224, 224, 0.2);
+  border: 2px solid rgba(224, 224, 224, 1);
+  padding: 10px 20px;
+  font-size: 18px;
+  box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+}
+/* .preview-container {
+  display: flex;
+  justify-content: flex-start;
+  margin:
+}
+.update {
+  display: flex;
+  justify-content: flex-start;
+} */
+/*-----------------------------------------END OF UPLOAD WINDOW-----------------------------------------*/
+
+/*------------------------------------------DOWNLOAD WINDOW-----------------------------------------*/
+
+.list {
+  padding: 0px 187px;
+  text-align: left;
+}
+.list ul li {
+  list-style: none;
+  background-color: #3c84f8;
+  color: white;
+  display: inline-block;
+  padding: 15px 60px 15px 20px;
+  width: 228px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+.list ul li span {
+  position: relative;
+  top: -1px;
+}
+.list ul li svg {
+  fill: white;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 15px;
+  top: 12px;
+  background-color: #ffffff20;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.list p {
+  text-align: center;
+}
+.expand-container {
+  width: 150px;
+  height: 0px;
+  position: absolute;
+  display: none;
+}
+.expand-container ul {
+  position: relative;
+  left: -40px;
+  top: -10px;
+  width: 100%;
+}
+.expand-container ul li {
+  text-align: left;
+  list-style: none;
+  border: 1px solid rgb(207, 207, 207);
+  border-bottom: 0px;
+  background-color: rgb(242, 242, 242);
+  padding: 10px 0px;
+  padding-left: 16px;
+  cursor: pointer;
+}
+.expand-container ul li:last-child {
+  border-bottom: 1px solid rgb(207, 207, 207);
+}
+/*-----------------------------------------END OF DOWNLAOD WINDOW-----------------------------------------*/
