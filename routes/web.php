@@ -32,3 +32,7 @@ Route::get('/banghay/gradethree', [BanghayController::class, 'gradethree']);
 Route::get('/banghay/gradefour', [BanghayController::class, 'gradefour']);
 Route::get('/banghay/gradefive', [BanghayController::class, 'gradefive']);
 Route::get('/banghay/gradesix', [BanghayController::class, 'gradesix']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

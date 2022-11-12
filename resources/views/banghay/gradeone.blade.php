@@ -3,17 +3,20 @@
 @section('content')
 
 
-<div>
+
+<div class="text-center">
   <h1>GRADE 1</h1>
   <h2>English</h2>
   @foreach($datas as $data)
   @if($data->subject == 'English')
-  <div class=card>
-    <div>Tittle: {{$data->name}}</div>
-    <div>Subject: {{$data->subject}}</div>
-    <div>Grade Level: {{$data->gradelevel}}</div>
-    <a href="" data-bs-toggle="modal" data-bs-target="#{{'view',$data->id}}">View</a>
-    <a href="{{url('/download', $data->file)}}">Download</a>
+  <div class=card-container>
+    <div class="card-item">
+      <div>Tittle: {{$data->name}}</div>
+      <div>Subject: {{$data->subject}}</div>
+      <div>Grade Level: {{$data->gradelevel}}</div>
+      <a href="" data-bs-toggle="modal" data-bs-target="#{{'view',$data->id}}">View</a>
+      <a href="{{url('/download', $data->file)}}">Download</a>
+    </div>
   </div>
   <div class="modal fade" id="{{'view',$data->id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-xxl">
@@ -45,12 +48,14 @@
   <h2>Math</h2>
   @foreach($datas as $data)
   @if($data->subject == 'Math')
-  <div class=card>
-    <div>Tittle: {{$data->name}}</div>
-    <div>Subject: {{$data->subject}}</div>
-    <div>Grade Level: {{$data->gradelevel}}</div>
-    <a href="" data-bs-toggle="modal" data-bs-target="#{{'view',$data->id}}">View</a>
-    <a href="{{url('/download', $data->file)}}">Download</a>
+  <div class=card-container>
+    <div class="card-item">
+      <div>Tittle: {{$data->name}}</div>
+      <div>Subject: {{$data->subject}}</div>
+      <div>Grade Level: {{$data->gradelevel}}</div>
+      <a href="" data-bs-toggle="modal" data-bs-target="#{{'view',$data->id}}">View</a>
+      <a href="{{url('/download', $data->file)}}">Download</a>
+    </div>
   </div>
   <div class="modal fade" id="{{'view',$data->id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-xxl">
@@ -82,12 +87,14 @@
   <h2>Science</h2>
   @foreach($datas as $data)
   @if($data->subject == 'Science')
-  <div class=card>
-    <div>Tittle: {{$data->name}}</div>
-    <div>Subject: {{$data->subject}}</div>
-    <div>Grade Level: {{$data->gradelevel}}</div>
-    <a href="" data-bs-toggle="modal" data-bs-target="#{{'view',$data->id}}">View</a>
-    <a href="{{url('/download', $data->file)}}">Download</a>
+  <div class=card-container>
+    <div class="card-item">
+      <div>Tittle: {{$data->name}}</div>
+      <div>Subject: {{$data->subject}}</div>
+      <div>Grade Level: {{$data->gradelevel}}</div>
+      <a href="" data-bs-toggle="modal" data-bs-target="#{{'view',$data->id}}">View</a>
+      <a href="{{url('/download', $data->file)}}">Download</a>
+    </div>
   </div>
   <div class="modal fade" id="{{'view',$data->id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-xxl">
@@ -118,13 +125,16 @@
   <h2>MAPEH</h2>
   @foreach($datas as $data)
   @if($data->subject == 'MAPEH')
-  <div class=card>
-    <div>Tittle: {{$data->name}}</div>
-    <div>Subject: {{$data->subject}}</div>
-    <div>Grade Level: {{$data->gradelevel}}</div>
-    <a href="" data-bs-toggle="modal" data-bs-target="#{{'view',$data->id}}">View</a>
-    <a href="{{url('/download', $data->file)}}">Download</a>
+  <div class=card-container>
+    <div class="card-item">
+      <div>Tittle: {{$data->name}}</div>
+      <div>Subject: {{$data->subject}}</div>
+      <div>Grade Level: {{$data->gradelevel}}</div>
+      <a href="" data-bs-toggle="modal" data-bs-target="#{{'view',$data->id}}">View</a>
+      <a href="{{url('/download', $data->file)}}">Download</a>
+    </div>
   </div>
+
   <div class="modal fade" id="{{'view',$data->id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-xxl">
       <div class="modal-content">
@@ -154,12 +164,14 @@
   <h2>Araling Panlipunan</h2>
   @foreach($datas as $data)
   @if($data->subject == 'Araling Panlipunan')
-  <div class=card>
-    <div>Tittle: {{$data->name}}</div>
-    <div>Subject: {{$data->subject}}</div>
-    <div>Grade Level: {{$data->gradelevel}}</div>
-    <a href="" data-bs-toggle="modal" data-bs-target="#{{'view',$data->id}}">View</a>
-    <a href="{{url('/download', $data->file)}}">Download</a>
+  <div class=card-container>
+    <div class="card-item">
+      <div>Tittle: {{$data->name}}</div>
+      <div>Subject: {{$data->subject}}</div>
+      <div>Grade Level: {{$data->gradelevel}}</div>
+      <a href="" data-bs-toggle="modal" data-bs-target="#{{'view',$data->id}}">View</a>
+      <a href="{{url('/download', $data->file)}}">Download</a>
+    </div>
   </div>
   <div class="modal fade" id="{{'view',$data->id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-xxl">
